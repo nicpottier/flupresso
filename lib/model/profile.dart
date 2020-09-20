@@ -18,7 +18,7 @@ class ProfileFrame {
   String name;
   int frameNumber;
   double temperature;
-  int duration;
+  double duration;
   ProfileTarget target;
 
   ProfileFrame(this.name, this.frameNumber, this.temperature, this.duration,
@@ -29,7 +29,7 @@ class ProfileFrame {
       json['name'] as String,
       json['index'] as int,
       json['temp'] as double,
-      json['duration'] as int,
+      json['duration'] as double,
       ProfileTarget.fromJson(json['target']),
     );
   }
